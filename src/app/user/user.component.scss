@@ -1,0 +1,51 @@
+.add-user-btn {
+  position: fixed;
+  right: 56px;
+  bottom: 56px;
+  background-color: rgb(8, 116, 8) ;
+  color: rgb(56, 70, 52);
+  border: 5px double rgb(56, 70, 52);
+}
+
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+
+      &:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+      }
+  }
+
+  td {
+      height: 48px;
+      padding-right: 15px;
+      padding-left: 15px;
+      cursor: pointer;
+  }
+
+  th {
+      color: rgba(0, 0, 0, 0.4);
+      font-size: 14px;
+      font-weight: 500;
+      text-align: start;
+      height: 48px;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+
+  button {
+      scale: 0.7;
+  }
+}
+
+
+@media (max-width: 850px) {
+  .add-user-btn {
+      right: 20px;
+      bottom: 20px;
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "business-app",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

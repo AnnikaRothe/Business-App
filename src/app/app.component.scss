@@ -1,64 +1,115 @@
-.mat-drawer-container {
-  height: 100vh;
-}
+.logo-container{
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  margin-bottom: 50px;
 
-.menu-items {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-
-  li {
-    padding-left: 16px;
-    padding-right: 16px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-    mat-icon {
-      margin-right: 7px;
-    }
-
-    &:hover {
-      background-color: rgba(0, 128, 0, 0.058);
-    }
-
-    &:focus{
-        outline: 2px solid rgb(29, 3, 54);
-    }
+  img {
+    width: 100px;
+    border: 2px solid;
+    border-radius: 5px;
   }
 }
 
+
+
+.example-container {
+  height: 100vh;
+  background-color: rgb(237, 237, 235);
+}
+
+
 .menu-icon {
+  padding-right: 16px;
+}
+
+
+.pointer {
   cursor: pointer;
 }
 
+
 .sidenav {
-  width: 300px;
+  width: 200px;
+  background-color: rgb(56, 70, 52);
+  color: #1e8c10ee;
+  text-shadow: 0px 0.3px 0px rgb(9, 73, 15);
+  font-weight: 500;
 }
 
-.logo-container {
-  border-bottom: 1px solid rgba(45, 168, 4, 0.916);
-  padding-left: 16px;
-  padding-right: 16px;
-  min-height: 56px;
-  display: flex;
-  align-items: center;
+
+
+.mb-16 {
+  margin-bottom: 16px;
 }
 
-.logo {
-  width: 97px;
+
+.mat-toolbar-row, .mat-toolbar {
+  min-height: 80px;
+  height: 80px;
+  background-color: rgb(47, 53, 47);
+  color: #1e8c10ee;
+  font-weight: 500;
+  text-shadow: 0.9px 0px 0px rgb(4, 140, 15);
 }
 
-mat-toolbar,
-mat-toolbar-row {
-  background-color:  rgba(0, 128, 0, 0.058);
-  border-bottom: 1px solid rgba(45, 168, 4, 0.916);
-  min-height: 57px;
-  height: 56px;
+
+  
+
+
+.menu-items {
+  padding-left: 0;
+  margin: 0;
+
+  li {
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      border-bottom: 5px double  rgba(47, 53, 47, 0.385);
+      cursor: pointer;
+
+      mat-icon {
+          margin-right: 16px;
+      }
+
+      &:hover {
+          background-color: rgba(47, 53, 47, 0.385);
+      }
+  }
 }
+
 
 .router-container {
   padding-left: 56px;
+  padding-right: 56px;
   padding-top: 16px;
+  padding-bottom: 16px;
+  max-width: 1000px;
+  margin-top: 32px;
 }
+
+
+
+.warning-input {
+  width: 100%; 
+  color: red;
+}
+
+
+.message {
+  text-align: center;
+}
+
+
+
+@media (max-width: 750px) {
+  .router-container {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 0px;
+   }
+}
+
+

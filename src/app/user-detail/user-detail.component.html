@@ -1,0 +1,48 @@
+<mat-card class="user-detail-header">
+    <div class="userMenuField">
+        <img *ngIf="user.gender == 'male'" src="assets/img/student.png" alt="male profile pic">
+        <img *ngIf="user.gender == 'female'" src="assets/img/businesswoman.png" alt="female profile pic">
+        <img *ngIf="user.gender == 'female'" src="assets/img/user.png" alt="divers profile pic">
+        <div class="user-details" >
+            <h2>{{ user.firstName }} {{ user.lastName }}</h2>
+            <h3>{{ user.email }}</h3>
+        </div>
+    </div>
+    <div class="userMenu-btn">
+        <button [matMenuTriggerFor]="menu" mat-icon-button >
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button (click)="editUserDetail()" mat-menu-item>Edit user</button>
+            <button (click)="deleteUser()" routerLink="/user" mat-menu-item>Delete user</button>
+          </mat-menu>
+    </div>
+</mat-card>
+<mat-card class="mt-32">
+    <mat-card-header class="header-address">
+        <button mat-icon-button (click)="editAddress()">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-card-title>Address</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            {{ user.street }} <br>
+            {{ user.zipCode }} {{ user.city }}
+        </p>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="mt-32">
+    <mat-card-header class="header-address">
+        <button mat-icon-button (click)="editNotes()">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-card-title>Notes</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            {{ user.notes }} 
+        </p>
+    </mat-card-content>
+</mat-card>

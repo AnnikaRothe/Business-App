@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "business-app-45517": {
+      "hosting": {
+        "business-app": [
+          "business-app-45517"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "business-app-45517"
+  }
+}
